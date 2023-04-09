@@ -2,7 +2,7 @@
   "name": "prettier-plugin-htb",
   "version": "0.0.1",
   "description": "",
-  "main": "dist/src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "clean:dist": "rimraf ./dist",
     "clean:modules": "rimraf ./node_modules",
@@ -14,8 +14,7 @@
     "start": "node dist/src/index",
     "start:dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "pretest": "npm run build",
-    "test": "jest dist/test/.*\\.test\\.js",
-    "test:dev": "jest test/.*\\.test\\.ts"
+    "test": "jest test/.*\\.test\\.ts"
   },
   "devDependencies": {
     "@types/jest": "^29.5.0",
