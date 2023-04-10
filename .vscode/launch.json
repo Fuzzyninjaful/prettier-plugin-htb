@@ -6,7 +6,7 @@
       "request": "launch",
       "name": "Launch Program",
       "skipFiles": ["<node_internals>/**", "node_modules/**"],
-      "program": "${workspaceFolder}/dist/src/index.js",
+      "program": "${workspaceFolder}/dist/index.js",
       "preLaunchTask": "npm: build",
       "console": "integratedTerminal"
     },

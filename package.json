@@ -10,7 +10,7 @@
     "lint": "npx eslint src/**/*.ts",
     "lint:fix": "npx eslint --fix src/**/*.ts && npx eslint --fix test/**/*.ts",
     "prebuild": "npm run clean:dist",
-    "build": "tsc",
+    "build": "tsc --project tsconfig.prod.json",
     "start": "node dist/src/index",
     "start:dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "pretest": "npm run build",
